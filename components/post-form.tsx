@@ -38,11 +38,10 @@ export default function PostForm({ formAction, initialData }: PostFromProps) {
                 </div>
                 <div className="mb-4">
                     <label htmlFor="content" className="block mb-2">Content</label>
-                    <textarea id="content" name="content" defaultValue={initialData.content} className="rounded p-2 w-full">
+                    <textarea id="content" name="content" defaultValue={initialData.content} className="rounded p-2 w-full" />
                         {
                             formState.errors.content && <div className="text-red-500">{formState.errors.content?.join(', ')}</div>
                         }
-                    </textarea>
                 </div>
                 <div className="mb-4">
                     <button type="submit" className="bg-white px-4 py-2 rounded mr-2">Save</button>

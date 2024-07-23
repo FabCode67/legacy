@@ -26,7 +26,7 @@ export async function  createPost(
 ): Promise<PostFormState> {
     const result = postSchema.safeParse({
     title: formData.get('title'),
-    content: formData.get('contnet')
+    content: formData.get('content')
     })
 
     if (!result.success){
